@@ -563,6 +563,12 @@
     <Content Include="Assets\summernote\dist\font\summernote9d3d.woff" />
     <Content Include="Assets\summernote\dist\font\summernoted41d.eot" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Facebook\Facebook.csproj">
+      <Project>{dd37eb36-184a-4d67-9c73-b65522807344}</Project>
+      <Name>Facebook</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
