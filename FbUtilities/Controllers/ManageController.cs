@@ -14,13 +14,13 @@ namespace FbUtilities.Controllers
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;
-        private ApplicationUserManager _userManager;
+        private FbUtilitiesUserManager _userManager;
 
         public ManageController()
         {
         }
 
-        public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+        public ManageController(FbUtilitiesUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
             SignInManager = signInManager;
@@ -38,11 +38,11 @@ namespace FbUtilities.Controllers
             }
         }
 
-        public ApplicationUserManager UserManager
+        public FbUtilitiesUserManager UserManager
         {
             get
             {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<FbUtilitiesUserManager>();
             }
             private set
             {

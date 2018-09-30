@@ -1,6 +1,11 @@
+E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\Facebook.dll.config
 E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\Facebook.dll
 E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\Facebook.pdb
+E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\EntityFramework.dll
+E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\EntityFramework.SqlServer.dll
+E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\EntityFramework.xml
+E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\EntityFramework.SqlServer.xml
 E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\bin\Debug\Facebook.xml
-E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\obj\Debug\Facebook.csprojResolveAssemblyReference.cache
 E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\obj\Debug\Facebook.dll
 E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\obj\Debug\Facebook.pdb
+E:\AnhTT\Workspace\Facebook\FbUtilities\Facebook\obj\Debug\Facebook.csprojResolveAssemblyReference.cache

@@ -6,10 +6,10 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace FbUtilities.Models
 {
-    // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    public class ApplicationUser : IdentityUser
+    // You can add profile data for the user by adding more properties to your FbUtilitiesUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
+    public class FbUtilitiesUser : IdentityUser
     {
-        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
+        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<FbUtilitiesUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
@@ -18,16 +18,26 @@ namespace FbUtilities.Models
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class FbUtilitiesDbContext : IdentityDbContext<FbUtilitiesUser>
     {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+        public FbUtilitiesDbContext()
+            : base("FacebokUtilitiesConnection", throwIfV1Schema: false)
         {
         }
 
-        public static ApplicationDbContext Create()
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            return new ApplicationDbContext();
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<FbUtilitiesUser>().ToTable("FbUtilitiesUser").Property(p => p.Id).HasColumnName("UserId");
+            modelBuilder.Entity<IdentityUserRole>().ToTable("UserRoles");
+            modelBuilder.Entity<IdentityUserLogin>().ToTable("UserLogins");
+            modelBuilder.Entity<IdentityUserClaim>().ToTable("UserClaims");
+            modelBuilder.Entity<IdentityRole>().ToTable("Roles");
+        }
+
+        public static FbUtilitiesDbContext Create()
+        {
+            return new FbUtilitiesDbContext();
         }
     }
 }
