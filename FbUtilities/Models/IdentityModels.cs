@@ -9,6 +9,7 @@ namespace FbUtilities.Models
     // You can add profile data for the user by adding more properties to your FbUtilitiesUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class FbUtilitiesUser : IdentityUser
     {
+        public string Name { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<FbUtilitiesUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

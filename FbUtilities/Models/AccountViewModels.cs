@@ -64,6 +64,11 @@ namespace FbUtilities.Models
 
     public class RegisterViewModel
     {
+        [Display(Name = "Name")]
+        public string Name { get; set; }
+        [Required]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]

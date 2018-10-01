@@ -74,3 +74,4 @@ E:\AnhTT\Workspace\Facebook\FbUtilities\FbUtilities\obj\Debug\FbUtilities.Migrat
 E:\AnhTT\Workspace\Facebook\FbUtilities\FbUtilities\obj\Debug\FbUtilities.csproj.GenerateResource.Cache
 E:\AnhTT\Workspace\Facebook\FbUtilities\FbUtilities\obj\Debug\FbUtilities.dll
 E:\AnhTT\Workspace\Facebook\FbUtilities\FbUtilities\obj\Debug\FbUtilities.pdb
+E:\AnhTT\Workspace\Facebook\FbUtilities\FbUtilities\obj\Debug\FbUtilities.Migrations.AddNameFieldToFbUtilitiesUser.resources

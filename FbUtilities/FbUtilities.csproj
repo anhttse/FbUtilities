@@ -199,6 +199,10 @@
     <Compile Include="Migrations\201809291146005_InitialModel.Designer.cs">
       <DependentUpon>201809291146005_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201810011209020_AddNameFieldToFbUtilitiesUser.cs" />
+    <Compile Include="Migrations\201810011209020_AddNameFieldToFbUtilitiesUser.Designer.cs">
+      <DependentUpon>201810011209020_AddNameFieldToFbUtilitiesUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -924,6 +928,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201809291146005_InitialModel.resx">
       <DependentUpon>201809291146005_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810011209020_AddNameFieldToFbUtilitiesUser.resx">
+      <DependentUpon>201810011209020_AddNameFieldToFbUtilitiesUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
